@@ -8,11 +8,11 @@ import Loader from 'react-loader-spinner'
 const MemeGenerator = () =>{
 
     const [currentImage, setCurrentImage] = useState("");
-    const [loading, setLoading] = useState("false");
+    const [loading, setLoading] = useState(false);
     const [topText, setTopText] = useState("");
     const [bottomText, setBottomText] = useState("");
-   const [blackText, setBlackText] = useState("false"); 
-    const [download, setDownload] = useState("false");
+   const [blackText, setBlackText] = useState(false); 
+    const [download, setDownload] = useState(false);
 
     const fetchMeme = async () => {
         setLoading(true);
