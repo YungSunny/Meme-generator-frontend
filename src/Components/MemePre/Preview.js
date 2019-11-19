@@ -3,8 +3,8 @@ import './Preview.css'
 
 const Preview = (props) => {
 
-    const topHeaderColor = props.blackText ? "top-black" :"top-white";
-    const bottomHeaderColor = props.blackText ? "bottom-black" : "bottom-white";
+    const topHeaderColor = props.blackText ? " text top black" :"text top white";
+    const bottomHeaderColor = props.blackText ? "text bottom black" : "text bottom white";
 
     return(
         <div className="meme-preview" >

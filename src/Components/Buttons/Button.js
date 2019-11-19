@@ -3,8 +3,10 @@ import './Button.css'
 
 const Button = (props) => {
 
+    const style = props.blackText ? "default clicked" : "default regular-backgroud";
+
     return(
-        <button type={props.type} onClick={props.onClick}>{props.text}</button>
+        <button className={style} type={props.type} onClick={props.onClick}>{props.text}</button>
     )
 
 }

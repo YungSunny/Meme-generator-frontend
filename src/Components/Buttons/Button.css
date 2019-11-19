@@ -1,8 +1,15 @@
-button {
+.default{
     border-block-end-width: 0.5vw;
     font-family: VT323, monospace;
     font-size: 25px;
     letter-spacing: 1.5px;
     color: white;
+}
+
+.regular-backgroud{
     background: #6441A5;
+}
+
+.clicked{
+    background: #d6d010;
 }
