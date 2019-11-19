@@ -42,6 +42,18 @@
 
 @media only screen and (max-width: 600px){
     .meme-preview  > img {
-        width: 50%;
+        width: 100%;
     }
+
+    .meme-preview > .text {
+        position: absolute;
+        text-align: center;
+        width: 40%;
+        margin: 15px 0;
+        padding: 0 5px;
+        font-family: impact, sans-serif;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    
 }

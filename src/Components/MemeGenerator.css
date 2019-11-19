@@ -29,8 +29,8 @@
 
 @media only screen and (max-width: 600px){
     .buttons-group{
-        display: flex;
-        width: 97%;
+        display: row;
+        width: 75%;
         margin-bottom: 7%;
     }
 }

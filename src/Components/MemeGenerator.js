@@ -75,7 +75,6 @@ const MemeGenerator = () =>{
     return (
         <div>
             <Header/>
-            {console.log(blackText)}
             <form className="meme-form" onSubmit={handleSubmit}>
                     <input 
                         type="text"
