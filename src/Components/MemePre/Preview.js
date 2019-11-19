@@ -1,10 +1,10 @@
-import React, {useMemo} from 'react'
+import React from 'react'
 import './Preview.css'
 
 const Preview = (props) => {
 
-    const topHeaderColor = useMemo(() => (props.blackText === true) ? 'top-black' :'top-white', [props.blackText]);
-    const bottomHeaderColor = useMemo(() => (props.blackText === true) ? "bottom-black" : "bottom-white", [props.blackText]);
+    const topHeaderColor = props.blackText ? "top-black" :"top-white";
+    const bottomHeaderColor = props.blackText ? "bottom-black" : "bottom-white";
 
     return(
         <div className="meme-preview" >
