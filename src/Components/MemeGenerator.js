@@ -16,7 +16,7 @@ const MemeGenerator = () =>{
 
     const fetchMeme = async () => {
         setLoading(true);
-        const response = await fetch("http://localhost:8080/getMeme");
+        const response = await fetch("https://mem-gen.herokuapp.com/getMeme");
         const result = await response.text();
         setCurrentImage(result);
         setLoading(false);
@@ -28,7 +28,7 @@ const MemeGenerator = () =>{
 
       const handleSubmit =  async (event) => {
         event.preventDefault();
-        const send = await fetch("http://localhost:8080/editMeme", {
+        const send = await fetch("https://mem-gen.herokuapp.com/editMeme", {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -58,7 +58,7 @@ const MemeGenerator = () =>{
       const downloadImage = require("downloadjs");
 
       const handleDownload = async () => {
-        const res = await fetch("http://localhost:8080/getNewMeme");
+        const res = await fetch("https://mem-gen.herokuapp.com/getNewMeme");
         const blob = await res.blob();
         downloadImage(blob, "download.jpeg");
       }
