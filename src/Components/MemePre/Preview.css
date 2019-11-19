@@ -48,7 +48,7 @@
     .meme-preview > .text {
         position: absolute;
         text-align: center;
-        width: 40%;
+        width: 100%;
         margin: 15px 0;
         padding: 0 5px;
         font-family: impact, sans-serif;

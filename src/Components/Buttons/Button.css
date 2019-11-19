@@ -4,6 +4,7 @@
     font-size: 25px;
     letter-spacing: 1.5px;
     color: white;
+    width: 15%;
 }
 
 .regular-backgroud{
@@ -12,4 +13,16 @@
 
 .clicked{
     background: #d6d010;
+}
+
+@media only screen and (max-width: 600px){
+    .default{
+        border-block-end-width: 0.5vw;
+        font-family: VT323, monospace;
+        font-size: 25px;
+        letter-spacing: 1.5px;
+        color: white;
+        width: 75%;
+
+    }
 }
